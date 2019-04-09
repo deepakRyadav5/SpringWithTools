@@ -13,6 +13,7 @@ public class StudentServiceImpl implements StudentService {
 	private StudentDAO dao;
 
 	public StudentServiceImpl(StudentDAO dao) {
+		System.out.println("StudentServiceImpl.StudentServiceImpl()");
 		this.dao = dao;
 	}
 
