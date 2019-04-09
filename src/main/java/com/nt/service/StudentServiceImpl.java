@@ -13,12 +13,14 @@ public class StudentServiceImpl implements StudentService {
 	private StudentDAO dao;
 
 	public StudentServiceImpl(StudentDAO dao) {
+		System.out.println("StudentServiceImpl.StudentServiceImpl()");
 		this.dao = dao;
 	}
 
 	@Override
 	public List<StudentDTO> fetchAllStudents() {
 		System.out.println("StudentServiceImpl.fetchAllStudents(-,-)");
+		System.out.println("StudentServiceImpl.fetchAllStudents(---)");
 		List<StudentBO> listBO = null;
 		List<StudentDTO> listDTO = new ArrayList();
 
