@@ -36,6 +36,7 @@ public class RegisterStudentController extends SimpleFormController {
 		String status = null;
 		List<StudentDTO> listDTO=null;
 		ModelAndView mav=null;
+		System.out.println(".....................");
 
 		cmd = (StudentCommand) command;
 
