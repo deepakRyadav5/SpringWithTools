@@ -18,6 +18,7 @@ public class StudentServiceImpl implements StudentService {
 
 	@Override
 	public List<StudentDTO> fetchAllStudents() {
+		System.out.println("StudentServiceImpl.fetchAllStudents()");
 		List<StudentBO> listBO = null;
 		List<StudentDTO> listDTO = new ArrayList();
 
